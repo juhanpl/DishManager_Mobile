@@ -28,7 +28,7 @@ class CategoryRepository {
         val json = connection.getInputStream().bufferedReader().use { it.readText() }
         val jsonArray = JSONArray(json)
 
-        categories.add("Select...")
+        categories.add("All")
 
         for (position in 0 until jsonArray.length()) {
 
